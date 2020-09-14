@@ -1,0 +1,111 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+    position: relative;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #e5e5e5;
+}
+main {
+    display: inline-block;
+    width: 100%;
+}
+footer {
+    margin-top: 0;
+    text-align: center!important;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #2d4059;
+    color: #e5e5e5;
+}
+#login button[type="submit"]:hover {
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px black;
+}
+.navbar {
+    background-color: #2d4059 !important;
+    z-index: 10;
+}
+.navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+}
+.main-navbar .nav-item {
+    padding: 2px;
+}
+.main-navbar .nav-item.active {
+    border-radius: 5px;
+    background-color: #1e5f74;
+    padding: 2px;
+}
+.navbar .navbar-brand {
+    color: #e5e5e5 !important;
+}
+.navbar .nav-item a {
+    color: #e5e5e5 !important;
+}
+.navbar .nav-item {
+    color: #e5e5e5 !important;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.alert.alert-danger ul {
+    margin: 0;
+}
+.alert.alert-danger ul li i {
+    left: -5px;
+    position: relative;
+    top: 1px;
+}
+.form-check-label {
+    bottom: 2px;
+}
+@media only screen and (max-width: 992px) {
+    .navbar-collapse {
+        top: 10px;
+    }
+    .form-inline {
+        float: left;
+        margin-top: 20px !important;
+        width: 100%;
+        border-top: solid #1f738e 2px;
+    }
+    .main-navbar .nav-item.active {
+        padding: 2px;
+    }
+    .navbar .nav-item {
+        width: 100%;
+    }
+    .navbar .nav-item a {
+        left: 10px;
+        text-align: center;
+    }
+}
+.g-signin2 {
+    top: 10px;
+}
+.abcRioButton {
+    border-radius: 5px;
+}
+.abcRioButtonLightBlue {
+    border-radius: 5px !important;
+    width: 100% !important;
+}
+.abcRioButtonContents span {
+    position: relative;
+    left: -15px;
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0e223c;
+}

@@ -1,0 +1,207 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%
+}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+main {
+    margin: 0;
+}
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+a {
+    background-color: transparent;
+    text-decoration: none !important;
+}
+a:active, a:hover {
+    outline: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin:0px;
+    padding:0px;
+}
+/***********************  TOP Bar ********************/
+.sidebar{
+    width: 100%;
+    background-color: #2d4059;
+    display: inline-block;
+    float: left;
+    height: 88vh;
+    overflow-y: scroll;
+    border-top: 2px solid #12253e;
+    border-bottom: 2px solid #12253e;
+}
+.bg-defoult{
+    background-color:#2d4059;
+}
+.sidebar ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.sidebar ul li {
+    margin-top: 10px;
+}
+.sidebar li a,.sidebar li a.collapsed.active{
+    display:block;
+    padding:8px 12px;
+    color:#fff;
+    border-left:0px solid #dedede;
+    text-decoration:none
+}
+.sidebar li a.active{
+    background-color: #0e223c;
+    transition: all 0.5s  ease-in-out
+}
+.sidebar li a:hover{
+    background-color:#0e223c !important;
+}
+.sidebar li a i{
+    padding-right:5px;
+}
+.sidebar ul li .sub-menu li{
+    margin-left: 5px;
+}
+.sidebar ul li .sub-menu li a{
+    position:relative
+}
+.sidebar ul li .sub-menu li a:before{
+    font-family: FontAwesome;
+    content: "\f105";
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.sidebar ul li .sub-menu li a:hover:after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 5px;
+    background-color: #111;
+    height: 100%;
+}
+.sidebar ul li .sub-menu li a:hover{
+    background-color:#222;
+    padding-left:20px;
+    transition: all 0.5s  ease-in-out
+}
+.sidebar li a .nav-label,.sidebar li a .nav-label+span{
+    transition: all 0.5s  ease-in-out
+}
+.sidebar.fliph li a .nav-label,.sidebar.fliph li a .nav-label+span{
+    display:none;transition: all 0.5s  ease-in-out
+}
+.sidebar.fliph {
+    width: 42px;transition: all 0.5s  ease-in-out;
+}
+.sidebar.fliph li{
+    position:relative
+}
+.sidebar.fliph .sub-menu {
+    position: absolute;
+    left: 39px;
+    top: 0;
+    background-color: #222;
+    width: 150px;
+    z-index: 100;
+}
+.sidebar ul li .active {
+    background-color: #0e223c;
+}
+.fa-chevron-left:before {
+    top: 5px;
+    position: relative;
+}
+.fa-chevron-down:before {
+    top: 5px;
+    position: relative;
+}.navbar-brand {
+     font-family: 'Kumbh Sans', sans-serif;
+ }
+.logout {
+    border-left: solid 1px #e5e5e5;
+}
+.notifications {
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+.notifications i {
+    position: relative;
+    font-size: 22px;
+}
+.notifications .notifications-count {
+    top: 5px;
+    left: -15px;
+    border-radius: 10px;
+    background-color: #c52121;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+.navbar-nav .dropdown-menu {
+    left: -10vw;
+}
+.navbar .navbar-brand a {
+    color: #e5e5e5 !important;
+    font-size: 20px;
+    top: 4px;
+    text-transform: uppercase;
+}
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #2d4059 !important;
+}
+.user-content {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+.breadcrumb {
+    background-color: #f5f5f5;
+}
+.user-content-title {
+    text-transform: capitalize;
+}
+@media only screen and (max-width: 992px) {
+    footer {
+        margin-top: 1.0em;
+    }
+    .navbar .nav-item {
+        text-align: center;
+    }
+    .logout {
+        border: none;
+        width: 90%;
+        margin-top: 10px;
+    }
+    .navbar .nav-item a {
+        left: 5px;
+    }
+    .form-inline {
+        border: none;
+    }
+    .sidebar {
+        height: 100%;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,44 @@
+#login div:nth-child(3) {
+    left: 25px;
+}
+#login div:nth-child(3) label {
+    top: -2px;
+}
+.login-text {
+    background-color: #2d4059;
+    color: #e5e5e5;
+    text-align: center;
+    height: 95vh;
+    display: grid;
+}
+.login-text div {
+    margin: auto 0;
+}
+.login-text a i {
+    font-size: 40px;
+    top: 45px;
+    cursor: pointer;
+}
+.login-text a {
+    color: #e5e5e5;
+}
+.login-text a:hover {
+    color: #e5e5e5;
+}
+.login-form {
+    padding: 5vw;
+    margin: auto 0;
+}
+.login-form form button[type="submit"] {
+    color: #e5e5e5;
+    background-color: #2d4059;
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.fb_iframe_widget {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
